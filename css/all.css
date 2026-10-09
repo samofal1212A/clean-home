@@ -415,7 +415,24 @@ main .services .layout .services_card .card .card_title p{
 
 @media (max-width: 767px){  
 main .services .layout{
-  width: 96%;
+  width: 94%;
+}
+main .services .layout h2{
+  margin: 0 0 30px 0;
+}
+main .services .layout .services_card{
+  justify-items: start;
+  gap: 20px;
+  margin: 0 0 20px 20px;
+}
+main .services .layout .services_card .card{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+main .services .layout .services_card .card .card_icon{
+  width: 50px;
+  height: 50px;
 }
   main .services .layout .services_card .card:hover{
   transform: none;
@@ -639,6 +656,9 @@ main .customer_reviews .layout .reviews .reviews_card .reviews_text p{
 }
 
 @media (max-width: 1439px) {
+  main .customer_reviews .layout{
+    width: 96%;
+  }
   main .customer_reviews .layout .reviews{
   gap: 25px;
 }
@@ -648,12 +668,18 @@ main .customer_reviews .layout .reviews .reviews_card .reviews_text p{
 }
 }
 @media (max-width: 767px){
+   main .customer_reviews .layout{
+    width: 96%;
+  }
   main .customer_reviews .layout .reviews{
-  gap: 25px;
+  gap: 20px;
 }
   main .customer_reviews .layout .reviews .reviews_card:hover{
     box-shadow:  0 0 8px rgba(9, 24, 245, 0.2);
     transform: none;
+}
+main .customer_reviews .layout .reviews .marks::before{
+  content: none;
 }
 }
 
