@@ -1,53 +1,59 @@
 <!doctype html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="uk" xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description"
+      content="Професійне прибирання квартир і будинків. Оберіть послугу та залиште заявку.">
 	<link rel="stylesheet" href="css/all.css" type="text/css"/>
 	<link rel="stylesheet" href="css/fonts.css" type="text/css"/>
 	<script type="text/javascript" src="js/main.js"></script>
-	<title>clean home</title>
+	<title>Clean Home — професійне прибирання</title>
 </head>
 <body>
 	<div id="wrapper">
 		<header>
 			<div class="layout">
-				<div class="logo">
-					<a href="#">
-						<img src="images/logo.png" alt="Clean Home">
-					</a>
-					<h1>Clean Home</h1>
+				<div class="header_container">
+					<div class="logo">
+						<a href="#">
+							<img src="images/logo.png" alt="логотип Clean Home">
+						</a>
+						<h1>Clean Home</h1>
+					</div>
+					<nav>
+						<ul>
+							<li>
+								<a href="#">Головна</a>
+							</li>
+							<li>
+								<a href="#services">Послуги</a>
+							</li>
+							<li>
+								<a href="#prices">Ціни</a>
+							</li>
+							<li>
+								<a href="#">Контакти</a>
+							</li>
+						</ul>
+						<a href="#blank" class="btn">Замовити прибирання</a>
+					</nav>
 				</div>
-				<nav>
-					<ul>
-						<li>
-							<a href="#">Головна</a>
-						</li>
-						<li>
-							<a href="#">Послуги</a>
-						</li>
-						<li>
-							<a href="#">Ціни</a>
-						</li>
-						<li>
-							<a href="#">Контакти</a>
-						</li>
-					</ul>
-					<button>Замовити прибирання</button>
-				</nav>
 			</div>
 		</header>
 		<main>
 			<div id="content">
 				<section class="first_view">
 					<div class="layout">
-						<div class="text">
-							<h2>Професійне прибирання квартир та будинків</h2>
-							<p>Ми зробимо ваш дім чистим швидко, якісно та за доступною ціною</p>
-							<button>Замовити зараз</button>
-						</div>
-						<div class="img_holder">
-							<img src="images/main_images.jpg" alt="велике тематичне зображення">
+						<div class="hero_container">
+							<div class="text">
+								<h2>Професійне прибирання квартир та будинків</h2>
+								<p>Ми зробимо ваш дім чистим швидко, якісно та за доступною ціною</p>
+								<a href="#prices">Замовити зараз</a>
+							</div>
+							<div class="img_holder">
+								<img src="images/main_images.jpg" alt="прибирання кімнати">
+							</div>
 						</div>
 					</div>
 				</section>
@@ -90,7 +96,7 @@
 						</div>
 					</div>
 				</section>
-				<section class="services">
+				<section class="services" id="services">
 					<div class="layout">
 						<h2>Наші послуги</h2>
 						<div class="services_card">
@@ -145,7 +151,7 @@
 						</div>
 					</div>
 				</section>
-				<section class="prices">
+				<section class="prices" id="prices">
 					<div class="layout">
 						<h2>Наші ціни</h2>
 						<div class="tariffs">
@@ -170,7 +176,7 @@
 						</div>
 					</div>
 				</section>
-				<section class="customer_reviews">
+				<section class="customer_reviews" id="reviews">
 					<div class="layout">
 						<h2>Відгуки наших клієнтів</h2>
 						<div class="reviews">
@@ -228,7 +234,7 @@
 						</div>
 					</div>
 				</section>
-				<section class="blank">
+				<section class="blank" id="blank">
 					<div class="layout">
 						<h2>Замовте прибирання прямо зараз</h2>
 						<div class="blank_all">
@@ -242,7 +248,8 @@
 									<label for="phone">Телефон</label>
 									<input type="tel" id="phone" name="phone" required>
 									<label for="service">Оберіть послугу</label>
-									<select name="service" id="service">
+									<select name="service" id="service" required>
+										<option value="" selected disabled>Оберіть послугу</option>
 										<option value="general">Генеральне прибирання</option>
 										<option value="daily">Щоденне прибирання</option>
 										<option value="washing">Миття вікон</option>
@@ -266,7 +273,7 @@
 						<div class="footer_logo">
 							<div class="footer_holder">
 								<a href="#">
-									<img src="images/logo.png" alt="Clean Home">
+									<img src="images/logo.png" alt="логотип Clean Home">
 								</a>
 							</div>
 							<p>Професійне прибирання для вашого комфорту</p>
@@ -275,10 +282,10 @@
 							<h3>Навігація</h3>
 							<ul>
 								<li><a href="#">Головна</a></li>
-								<li><a href="#">Послуги</a></li>
-								<li><a href="#">Ціни</a></li>
-								<li><a href="#">Відгуки</a></li>
-								<li><a href="#">Контакти</a></li>
+								<li><a href="#services">Послуги</a></li>
+								<li><a href="#prices">Ціни</a></li>
+								<li><a href="#reviews">Відгуки</a></li>
+								<li><a href="#blank">Контакти</a></li>
 							</ul>
 						</div>
 						<div class="footer_contacts">
