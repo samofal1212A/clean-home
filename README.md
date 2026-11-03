@@ -53,42 +53,10 @@
 - Форма з HTML-атрибутами валідації `required`.
 - Стилізація станів фокусу для елементів форми та посилань.
 
-## 🚀 Запуск проєкту
+## Demo
 
-1. Клонуйте репозиторій:
+[Переглянути сайт](https://samofal1212a.github.io/clean-home/)
 
-   ```bash
-   git clone https://github.com/samofal1212A/clean-home.git
-   ```
+## Автор
 
-2. Перейдіть до папки проєкту:
-
-   ```bash
-   cd clean-home
-   ```
-
-3. Відкрийте файл `index.html` у браузері.
-
-## 📂 Структура проєкту
-
-```text
-clean-home/
-│
-├── css/
-│   ├── all.css
-│   └── fonts.css
-│
-├── images/
-│
-├── js/
-│   └── main.js
-│
-├── index.html
-└── README.md
-```
-
-## 👩‍💻 Автор
-
-Проєкт створений у межах самостійного навчання frontend-розробки.
-
-**GitHub:** [samofal1212A](https://github.com/samofal1212A)
+Anastasia — Frontend Developer
